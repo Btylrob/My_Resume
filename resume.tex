@@ -1,4 +1,4 @@
-i%-------------------------
+%-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
@@ -124,28 +124,37 @@ i%-------------------------
   \resumeSubHeadingListStart
     \resumeSubheading
       {Florida International University}{Miami, FL}
-      {Bachelor of Arts in Computer Science, Minor in Mathematics}{Aug. 2025 -- Exp. 2027}
+      {Bachelor of Arts in Computer Science, Minor in Statistics}{Aug. 2025 -- Exp. 2027}
+       \resumeItemListStart
+        \resumeItem{Member of CodeCrunch, an FIU computer science club}
+        \resumeItem{Relevant Coursework: }
+      \resumeItemListEnd
     \resumeSubheading
       {Broward College}{Davie, FL}
-      {Associate's in Liberal Arts}{Aug. 2024 -- May 2025}
-      \resumeItem{}
-      . {GPA}: 3.4 Deans List {Courses:} Discrete Mathematics,Intro to Data Science, SQL Fundamentals, Programming 1
+      {Associate of Arts}{Aug. 2024 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.4 | Dean’s List}
+        \resumeItem{1st Place, Broward College Math Awareness Competition}
+        \resumeItem{Relevant Coursework: Discrete Mathematics, Intro to Data Science, SQL
+        Fundamentals, Programming I \& II}
+        \resumeItem{Member of inTech, a student led club that dives in depth of concepts such as software development and engineering.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
-\section{Relevant Course Work}
+\section{Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Math and Programming Tutor}{July 2025 -- Present}
+      {Fort Lauderdale, FL}{Self-Employed}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
-        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+        \resumeItem{Tutored students in Python, Java, and Bash scripting, with an emphasis on problem-solving and algorithmic thinking.}
+        \resumeItem{Taught foundational topics in Linux, including file system navigation, permissions, and shell scripting.}
+        \resumeItem{Designed custom lessons on algebra, Boolean logic, and Discrete Math topics bridging math with related coding topics.}
       \resumeItemListEnd
-      
+  \resumeSubHeadingListEnd
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -156,66 +165,47 @@ i%-------------------------
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
-      {Information Technology Support Specialist}{Sep. 2018 -- Present}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Communicate with managers to set up campus computers used on campus}
-        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
-        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-      {Southwestern University}{Georgetown, TX}
-      \resumeItemListStart
-        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-        \resumeItem{Developed a game in Java to test the generated dungeons}
-        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
+%-----------PROJECTS-----------
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
 \resumeProjectHeading
   {\textbf{FPGA Accelerated Reddit Parser} $|$ \emph{Python, Verilog, Cassandra, Docker}}{June 2020 -- Present}
   \resumeItemListStart
-    \resumeItem{Built a high-throughput Reddit parser for crypto headlines using FPGA-accelerated filtering to extract relevant content with sub-millisecond latency}
-    \resumeItem{Applied transformer-based sentiment models (FinBERT, RoBERTa) to classify headlines as bullish, bearish, or fear-inducing in real time}
-    \resumeItem{Persisted sentiment-labeled time-series data using Apache Cassandra, enabling scalable, low-latency querying across 100M+ entries}
-    \resumeItem{Surfaced early market signals by analyzing sentiment momentum and frequency shifts; designed dashboards to visualize headline trends and market reactions}
+    \resumeItem{Built a high-throughput Reddit parser for crypto headlines from multiple subreddits using FPGA-accelerated filtering to extract relevant content with fast latency}
+    \resumeItem{Applied VADER semtiment analysis model to classify headlines as bullish, bearish, neutral, or fear-inducing in real time}
+    \resumeItem{Persisted sentiment-labeled time-series data using Apache Cassandra, enabling scalable, low-latency querying on a Docker container.}
+    \resumeItem{Surfaced early market signals by analyzing sentiment momentum and frequency shifts, from popular crypto currency subreddits.}
   \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+  \resumeProjectHeading
+  {\textbf{Minecraft Algorithim Visualization Mod} $|$ \emph{Java, Maven, Jenkins}}{May 2018 -- May 2020}
+  \resumeItemListStart
+    \resumeItem{Architected an extensible plugin system in Java using Minecraft Forge and Maven, enabling dynamic loading and step-by-step execution of algorithms with user-controlled input, visualization state, and logic flow.}
+    \resumeItem{Engineered a modular Minecraft mod to simulate and visualize core algorithms (sorting, graph traversal, recursion) and low-level bitmask operations, leveraging real-time 3D block animations to teach abstract CS concepts interactively}
+    \resumeItem{Built and deployed mod updates through a Jenkins CI/CD pipeline with Maven-based automation and version control using Git.}
+  \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Chatique} $|$ \emph{Python, Pandas, PyTorch, Transformers, MySQL, Docker}}{May 2018 -- May 2020}
           \resumeItemListStart
-            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
-            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
-            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
-            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+            \resumeItem{Developed a real-time Telegram moderation bot that detects profanity, hate speech, and NSFW imagery using fine-tuned RoBERTa and in-house image classification models.}
+            \resumeItem{Integrated Sentence Transformers to compare user input semantically against custom profanity dictionaries for nuanced filtering.}
+            \resumeItem{Deployed image moderation pipeline with real-time NSFW detection powered by PyTorch; optimized for GPU acceleration with CUDA fallback.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
  %   
-%-----------Organizations and Volunteer----
-\section{Organizations}
-. Broward College inTech, 
 
 %
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Golang, Python, Bash, C++, SQL (MySQL), JavaScript, HTML/CSS} \\
-     \textbf{Technologies}{: Linux Systems(Debian, Ubuntu), AWS, Docker,Flask, Jenkins, Cassandra, OS Fundamentals, Git} \\ 
+      \textbf{Languages:} Python, Java, Bash, SQL (MySQL), Go, JavaScript, HTML/CSS \\
+      \textbf{Technologies:} Linux (Debian, Ubuntu), Docker, Jenkins, Git, AWS, Cassandra, Flask \\
+      \textbf{Concepts:} OS Fundamentals, Discrete Math, Systems Programming, CI/CD, Linux Architecture
     }}
- \end{itemize}
+  \end{itemize}
+
 
 
 %-------------------------------------------
 \end{document}
-
