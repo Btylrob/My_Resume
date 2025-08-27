@@ -33,6 +33,7 @@
 % \usepackage{charter}
 
 
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -40,10 +41,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.8in}
+\addtolength{\evensidemargin}{-0.8in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.8in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -97,6 +98,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
+
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -113,46 +115,54 @@
 
 \begin{center}
     \textbf{\Huge \scshape Brandon Robinson} \\ \vspace{1pt}
-    \small 470-208-0415 $|$ \href{mailto:x@x.com}{\underline{robib93@mail.broward.edu}} $|$ 
-    \href{https://linkedin.com/in/...}{\underline{https://www.linkedin.com/in/bran-robinson/}} $|$
-    \href{https://github.com/...}{\underline{github.com/Btylrob}}
+    \small 470-208-0415 $|$ \href{mailto:1802brad@gmail.com}{\underline{1802brad@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/bran-robisnon}{\underline{https://www.linkedin.com/in/bran-robinson/}} $|$
+    \href{https://github.com/btylrob}{\underline{github.com/Btylrob}}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Florida International University}{Miami, FL}
-      {Bachelor of Arts in Computer Science, Minor in Statistics}{Aug. 2025 -- Exp. 2027}
-       \resumeItemListStart
-        \resumeItem{Member of CodeCrunch, an FIU computer science club}
-        \resumeItem{Relevant Coursework: }
-      \resumeItemListEnd
-    \resumeSubheading
-      {Broward College}{Davie, FL}
-      {Associate of Arts}{Aug. 2024 -- May 2025}
-      \resumeItemListStart
-        \resumeItem{GPA: 3.4 | Dean’s List}
-        \resumeItem{1st Place, Broward College Math Awareness Competition}
-        \resumeItem{Relevant Coursework: Discrete Mathematics, Intro to Data Science, SQL
-        Fundamentals, Programming I \& II}
-        \resumeItem{Member of inTech, a student led club that dives in depth of concepts such as software development and engineering.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Florida International University}{Miami, FL}
+    {Bachelor of Arts in Computer Science, Minor in Statistics}{Aug. 2025 -- Exp. 2027}
+    \resumeItemListStart
+      \resumeItem{Dean’s List; Member of CodeCrunch and InTech student-led clubs}
+      \resumeItem{1st Place, Broward College Math Awareness Competition}
+      \resumeItem{Relevant Coursework: Discrete Math, Data Science, SQL, Programming I \& II}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages:} Python, C++, Bash/Shell Scripting, SQL\\
+      \textbf{Technologies:} Docker, Wireshark, Jenkins, Git, AWS, Cassandra, Ansible \\
+      \textbf{Concepts:} OS Fundamentals, Discrete Math, CI/CD, Linux Architecture, network protocols (TCP, UDP)
+    }}
+  \end{itemize}
+
+
+
+%-------------------------------------------
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Math and Programming Tutor}{July 2025 -- Present}
-      {Fort Lauderdale, FL}{Self-Employed}
+      {Altius}{July 2025 -- October 2025}
+      {Software Developer Intern}{Remote}
       \resumeItemListStart
-        \resumeItem{Tutored students in Python, Java, and Bash scripting, with an emphasis on problem-solving and algorithmic thinking.}
-        \resumeItem{Taught foundational topics in Linux, including file system navigation, permissions, and shell scripting.}
-        \resumeItem{Designed custom lessons on algebra, Boolean logic, and Discrete Math topics bridging math with related coding topics.}
+        \resumeItem{Designed and deployed scalable full-stack applications using Flutter, TypeScript, and Firebase, supporting hundreds of users with real-time preference synchronization.}
+        \resumeItem{Built robust backend services in TypeScript/JavaScript, architecting APIs to efficiently manage and query structured customer data across Firebase Firestore and Pinecone vector databases.}
+        \resumeItem{Developed and maintained CI/CD pipelines via GitHub Actions, automating test, build, and deployment workflows to ensure fast, zero-downtime releases across multiple environments.}
+        \resumeItem{Increased student and recruiter onboarding speed by automating account provisioning, streamlining UI flows, and integrating real-time preference management.}
       \resumeItemListEnd
+    
   \resumeSubHeadingListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -168,44 +178,38 @@
 %-----------PROJECTS-----------
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
+
 \resumeProjectHeading
-  {\textbf{FPGA Accelerated Reddit Parser} $|$ \emph{Python, Verilog, Cassandra, Docker}}{June 2020 -- Present}
-  \resumeItemListStart
-    \resumeItem{Built a high-throughput Reddit parser for crypto headlines from multiple subreddits using FPGA-accelerated filtering to extract relevant content with fast latency}
-    \resumeItem{Applied VADER semtiment analysis model to classify headlines as bullish, bearish, neutral, or fear-inducing in real time}
-    \resumeItem{Persisted sentiment-labeled time-series data using Apache Cassandra, enabling scalable, low-latency querying on a Docker container.}
-    \resumeItem{Surfaced early market signals by analyzing sentiment momentum and frequency shifts, from popular crypto currency subreddits.}
-  \resumeItemListEnd
-  \resumeProjectHeading
-  {\textbf{Minecraft Algorithim Visualization Mod} $|$ \emph{Java, Maven, Jenkins}}{May 2018 -- May 2020}
-  \resumeItemListStart
-    \resumeItem{Architected an extensible plugin system in Java using Minecraft Forge and Maven, enabling dynamic loading and step-by-step execution of algorithms with user-controlled input, visualization state, and logic flow.}
-    \resumeItem{Engineered a modular Minecraft mod to simulate and visualize core algorithms (sorting, graph traversal, recursion) and low-level bitmask operations, leveraging real-time 3D block animations to teach abstract CS concepts interactively}
-    \resumeItem{Built and deployed mod updates through a Jenkins CI/CD pipeline with Maven-based automation and version control using Git.}
-  \resumeItemListEnd
-    \resumeProjectHeading
-          {\textbf{Chatique} $|$ \emph{Python, Pandas, PyTorch, Transformers, MySQL, Docker}}{May 2018 -- May 2020}
-          \resumeItemListStart
-            \resumeItem{Developed a real-time Telegram moderation bot that detects profanity, hate speech, and NSFW imagery using fine-tuned RoBERTa and in-house image classification models.}
-            \resumeItem{Integrated Sentence Transformers to compare user input semantically against custom profanity dictionaries for nuanced filtering.}
-            \resumeItem{Deployed image moderation pipeline with real-time NSFW detection powered by PyTorch; optimized for GPU acceleration with CUDA fallback.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
- %   
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
-  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-      \textbf{Languages:} Python, Java, Bash, SQL (MySQL), Go, JavaScript, HTML/CSS \\
-      \textbf{Technologies:} Linux (Debian, Ubuntu), Docker, Jenkins, Git, AWS, Cassandra, Flask \\
-      \textbf{Concepts:} OS Fundamentals, Discrete Math, Systems Programming, CI/CD, Linux Architecture
-    }}
-  \end{itemize}
+  {\textbf{Market Data Ingestion Pipeline} $|$ \emph{Python, ZeroMQ, Cassandra, Docker}}{}
+\resumeItemListStart
+  \resumeItem{Implemented an event driven ingestion service to capture and normalize high-frequency cryptocurrency market headlines from multiple data streams with sub 10ms processing latency.}
+  \resumeItem{Designed a concurrent, backpressure-aware pipeline using asyncio and ZeroMQ to ensure deterministic performance under burst loads.}
+  \resumeItem{Persisted normalized and timestamped events in Apache Cassandra for scalable, low-latency querying of historical and real-time data.}
+  \resumeItem{Developed real-time momentum and frequency shift detectors to surface early market-moving events.}
+\resumeItemListEnd
 
 
+\resumeProjectHeading
+  {\textbf{Low-Latency Stock Time-Series Database} $|$ \emph{C, POSIX, Lock-Free Concurrency}}{}
+\resumeItemListStart
+  \resumeItem{Implemented a custom time-series database in C purpose-built for ingesting high-frequency market data with sub-millisecond latency, sustaining millions of ticks per trading session without loss.}
+  \resumeItem{Designed a memory-mapped, append-only storage engine with bespoke time-window indexing, enabling constant-time retrieval of tick and OHLC data across arbitrary intervals.}
+  \resumeItem{Built a lock-free, multi-threaded ingestion pipeline leveraging ring buffers and fine-grained concurrency primitives for deterministic performance under burst loads.}
+  \resumeItem{Optimized cache locality, I/O throughput, and branch prediction using Linux perf and CPU profiling tools, achieving a 3× throughput gain over baseline implementations.}
+\resumeItemListEnd
 
-%-------------------------------------------
-\end{document}
+
+\resumeProjectHeading
+  {\textbf{FPGA + Server Hybrid Low-Latency Market Data Pipeline} $|$ \emph{Verilog, PCIe DMA, Linux, Lock-Free Concurrency}}{}
+\resumeItemListStart
+  \resumeItem{Engineered an FPGA-based UDP multicast parser with nanosecond-precision hardware timestamping and symbol-level filtering, achieving deterministic packet handling at 10Gbps line rate.}
+  \resumeItem{Designed and implemented a PCIe DMA engine to transfer normalized market data from FPGA to server memory with zero-copy, bypassing the kernel network stack.}
+  \resumeItem{Built a lock-free, multi-threaded feed handler on Linux to consume FPGA output from shared memory, perform real-time order book aggregation, and measure tick-to-trade latency.}
+  \resumeItem{Benchmarked and tuned PCIe throughput, cache locality, and NIC offloading to achieve sub-1µs end-to-end latency under sustained market burst conditions.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\end{document}ument}
